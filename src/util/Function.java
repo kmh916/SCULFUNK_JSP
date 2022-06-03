@@ -66,14 +66,14 @@ public class Function {
 	
 	//랜덤 임시비밀번호발송
 	public void sendSMS_pw(String user_phonenum,String randomPw) {
-		String api_key = "NCSVFLBUNRTXRKHU";
-	    String api_secret = "MFOQ1ETROUMBUXDUPKONBFE7CIETLFTY";
+		String api_key = "비밀이에요";
+	    String api_secret = "비밀이에요!";
 	    Message coolsms = new Message(api_key, api_secret);
 	    
 	    // 4 params(to, from, type, text) are mandatory. must be filled
 	    HashMap<String, String> params = new HashMap<String, String>();
 	    params.put("to", user_phonenum);
-	    params.put("from", "01091818218");
+	    params.put("from", "01012345678");
 	    params.put("type", "SMS");
 	    params.put("text", "[SCULFUNK] 임시 비밀번호는 "+randomPw+"입니다. 정확하게 입력해주세요");
 	    params.put("app_version", "test app 1.2"); // application name and version
